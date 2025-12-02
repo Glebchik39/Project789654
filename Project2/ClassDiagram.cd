@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animal" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAQAAAAAAAAAAAAAAEAAAAIAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Herbivores" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carnivores" Collapsed="true">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAAGAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elefant" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAQAAAAAAABAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rabbit" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAEAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jiraf" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIABAAAAAAAAAAAAAAAAAAAAAABAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolf" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAEIAAAAAAAAAAAAAAAAAAAACAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orel">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

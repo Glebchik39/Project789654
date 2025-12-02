@@ -130,6 +130,75 @@ public:
 	}
 };
 
+class Wolf : public Carnivores
+{
+	string color;
+public:
+	Wolf(string col, string s, int c, string n, int a) : Carnivores(s, c, n, a)
+	{
+		color = col;
+	}
+	void Eat()
+	{
+		cout << "Eat: Em olenei" << endl;
+	}
+	void Move()
+	{
+		cout << "Move: xodit na lapax" << endl;
+	}
+	void Print()
+	{
+		Carnivores::Print();
+		cout << "Color shercty: " << color << endl;
+	}
+};
+
+class Orel : public Carnivores
+{
+	int wingspan_cm;
+public:
+	Orel(int w, string s, int c, string n, int a) : Carnivores(s, c, n, a)
+	{
+		wingspan_cm = w;
+	}
+	void Eat()
+	{
+		cout << "Eat: Em krys" << endl;
+	}
+	void Move()
+	{
+		cout << "Move: fly" << endl;
+	}
+	void Print()
+	{
+		Carnivores::Print();
+		cout << "operenie cm: " << wingspan_cm << endl;
+	}
+};
+
+class Shark : public Carnivores
+{
+	int teeth_count;
+public:
+	Shark(int t, string s, int c, string n, int a) : Carnivores(s, c, n, a)
+	{
+		teeth_count = t;
+	}
+	void Eat()
+	{
+		cout << "Eat: Em ryb" << endl;
+	}
+	void Move()
+	{
+		cout << "Move: swim" << endl;
+	}
+	void Print()
+	{
+		Carnivores::Print();
+		cout << "Teeth count: " << teeth_count << endl;
+	}
+};
+
 int main()
 {
 	Herbivores* herbivores = nullptr;
@@ -138,6 +207,9 @@ int main()
 	cout << "1. Elefant" << endl;
 	cout << "2. Rabbit" << endl;
 	cout << "3. Jiraf" << endl;
+	cout << "4. Wolf" << endl;
+	cout << "5. Orel" << endl;
+	cout << "6. Shark" << endl;
 	cout << "Make your choice: ";
 	cin >> choice;
 
@@ -161,5 +233,20 @@ int main()
 		herbivores->Eat();
 		herbivores->Move();
 		break;
+	case 4:
+		carnivores = new Wolf("white", "gfgf", 12, "fhghg", 15);
+		carnivores->Print();
+		carnivores->Eat();
+		carnivores->Move();
+	case 5:
+		carnivores = new Orel(12, "fgfg", 12, "dfgfg", 15);
+		carnivores->Print();
+		carnivores->Eat();
+		carnivores->Move();
+	case 6:
+		carnivores = new Shark(12, "belay", 65, "Black shark", 56);
+		carnivores->Print();
+		carnivores->Eat();
+		carnivores->Move();
 	}
 }
