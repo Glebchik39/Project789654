@@ -2,8 +2,14 @@
 #include <string>
 using namespace std;
 
-class Animal
+struct IAnimal
 {
+	virtual void Move() = 0;
+	virtual void Eat() = 0;
+};
+
+class Animal : public IAnimal
+{	
 protected:
 	string name;
 	int age;
@@ -13,8 +19,6 @@ public:
 		name = n;
 		age = a;
 	}
-	virtual void Move() = 0;
-	virtual void Eat() = 0;
 	void Print()
 	{
 		cout << "Name: " << name << endl;
@@ -199,10 +203,13 @@ public:
 	}
 };
 
+
+
 int main()
 {
-	Herbivores* herbivores = nullptr;
-	Carnivores* carnivores = nullptr;
+	//Herbivores* herbivores = nullptr;
+	//Carnivores* carnivores = nullptr;
+	IAnimal* ptr = nullptr;
 	int choice = 0;
 	cout << "1. Elefant" << endl;
 	cout << "2. Rabbit" << endl;
@@ -216,37 +223,31 @@ int main()
 	switch (choice)
 	{
 	case 1:
-		herbivores = new Elefant(10, "ererer", 10, "Elefant", 16);
-		herbivores->Print();
-		herbivores->Eat();
-		herbivores->Move();
+		ptr = new Elefant(10, "ererer", 10, "Elefant", 16);
+		ptr->Eat();
+		ptr->Move();
 		break;
 	case 2:
-		herbivores = new Rabbit(120, "travca", 12, "Rabbit", 8);
-		herbivores->Print();
-		herbivores->Eat();
-		herbivores->Move();
+		ptr = new Rabbit(120, "travca", 12, "Rabbit", 8);
+		ptr->Eat();
+		ptr->Move();
 		break;
 	case 3:
-		herbivores = new Jiraf(12, "travca", 12, "Rabbit", 8);
-		herbivores->Print();
-		herbivores->Eat();
-		herbivores->Move();
+		ptr = new Jiraf(12, "travca", 12, "Rabbit", 8);
+		ptr->Eat();
+		ptr->Move();
 		break;
 	case 4:
-		carnivores = new Wolf("white", "gfgf", 12, "fhghg", 15);
-		carnivores->Print();
-		carnivores->Eat();
-		carnivores->Move();
+		ptr = new Wolf("white", "gfgf", 12, "fhghg", 15);
+		ptr->Eat();
+		ptr->Move();
 	case 5:
-		carnivores = new Orel(12, "fgfg", 12, "dfgfg", 15);
-		carnivores->Print();
-		carnivores->Eat();
-		carnivores->Move();
+		ptr = new Orel(12, "fgfg", 12, "dfgfg", 15);
+		ptr->Eat();
+		ptr->Move();
 	case 6:
-		carnivores = new Shark(12, "belay", 65, "Black shark", 56);
-		carnivores->Print();
-		carnivores->Eat();
-		carnivores->Move();
+		ptr = new Shark(12, "belay", 65, "Black shark", 56);
+		ptr->Eat();
+		ptr->Move();
 	}
 }
