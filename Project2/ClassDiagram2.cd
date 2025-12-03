@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Animal" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAEAAAAIAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Herbivores" Collapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Carnivores" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAIAAAAAAAAGAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Elefant" Collapsed="true">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAQAAAAAAABAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Rabbit" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAEAAAAAQAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Jiraf" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIABAAAAAAAAAAAAAAAAAAAAAABAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wolf" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAEIAAAAAAAAAAAAAAAAAAAACAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Orel" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAgAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shark" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAEIAAAAAAAAAAAAAAAACAACAAAAAAAAAEAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="IAnimal" Collapsed="true">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileName.cpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -8,6 +8,22 @@ struct IAnimal
 	virtual void Eat() = 0;
 };
 
+
+struct ISwim
+{
+	virtual void Swim() = 0;
+};
+
+struct IFly
+{
+	virtual void Fly() = 0;
+};
+
+struct ICreep
+{
+	virtual void Creep() = 0;
+};
+
 class Animal : public IAnimal
 {	
 protected:
@@ -157,7 +173,7 @@ public:
 	}
 };
 
-class Orel : public Carnivores
+class Orel : public Carnivores, public IFly
 {
 	int wingspan_cm;
 public:
@@ -178,9 +194,13 @@ public:
 		Carnivores::Print();
 		cout << "operenie cm: " << wingspan_cm << endl;
 	}
+	void Fly()
+	{
+		cout << "Fly: fly" << endl;
+	}
 };
 
-class Shark : public Carnivores
+class Shark : public Carnivores, public ISwim
 {
 	int teeth_count;
 public:
@@ -201,7 +221,39 @@ public:
 		Carnivores::Print();
 		cout << "Teeth count: " << teeth_count << endl;
 	}
+	void Swim()
+	{
+		cout << "Swim: swim" << endl;
+	}
 };
+
+class Snake : public Carnivores, public ICreep
+{
+	int lenght_cheshua;
+public:
+	Snake(int l, string s, int c, string n, int a) : Carnivores(s, c, n, a)
+	{
+		lenght_cheshua = l;
+	}
+	void Eat()
+	{
+		cout << "Eat: mouse" << endl;
+	}
+	void Move()
+	{
+		cout << "Move: polzat" << endl;
+	}
+	void Print()
+	{
+		Carnivores::Print();
+		cout << "lenght chesuai " << lenght_cheshua << endl;
+	}
+	void Creep()
+	{
+		cout << "Creep: creep" << endl;
+	}
+};
+
 
 
 
