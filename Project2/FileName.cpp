@@ -269,6 +269,7 @@ int main()
 	cout << "4. Wolf" << endl;
 	cout << "5. Orel" << endl;
 	cout << "6. Shark" << endl;
+	cout << "7. Bo Sin" << endl;
 	cout << "Make your choice: ";
 	cin >> choice;
 
@@ -301,5 +302,11 @@ int main()
 		ptr = new Shark(12, "belay", 65, "Black shark", 56);
 		ptr->Eat();
 		ptr->Move();
+	case 7:
+		ptr = new Snake(12, "ghgh", 79, "Cobra", 13);
+		ptr->Eat();
+		ptr->Move();
 	}
+
+
 }
